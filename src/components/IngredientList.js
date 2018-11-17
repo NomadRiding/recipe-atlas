@@ -1,11 +1,17 @@
 import React from 'react';
-import Ingredients from './Ingredients';
+
 
 class IngredientList extends React.Component {
-    render () {
-       return (
-           <p>This is an Ingredient List</p>
-       ) 
+    render() {
+        return (
+            <div id="character" onClick={ 
+				() => this.props.updateRecipeList(this.props.recipe) 
+				}>
+				<p>Name: {this.props.recipeList[0].title}</p>
+				{/* <p>source: {this.props.recipe.source_url}</p>
+				<p>display: {this.props.recipe.image_url}</p> */}
+			</div>
+        )
     }
 }
 

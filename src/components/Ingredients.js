@@ -1,10 +1,18 @@
 import React from 'react';
+import IngredientList from './IngredientList';
+import Food2Fork from './Food2Fork';
 
 
 class Ingredients extends React.Component {
+
+
+
+
     render() {
         return (
-            <p>This is an ingredient</p>
+        <div>
+            < IngredientList />
+        </div>
         )
     }
 }

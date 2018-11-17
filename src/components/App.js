@@ -1,13 +1,31 @@
 import React from 'react';
 import axios from 'axios';
-import RecipeList from './RecipeList';
+import Food2Fork from './Food2Fork';
 import IngredientList from './IngredientList';
 
 
-class App extends React.Component {
-    render() {
-        return {
 
-        }
+
+
+class App extends React.Component {
+    // getRecipe = (e) => {
+    //     e.preventDefault();
+    //     let recipeName = e.target.elements.recipeName.value;
+    //     console.log(recipeName);
+        
+    // }
+
+    render() {
+        return (
+            <div>
+                <div>
+                <h1>I am a Recipe App</h1>
+
+                </div>
+                <Food2Fork />
+            </div>
+        )
     }
 }
+
+export default App;
