@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Food2Fork from './Food2Fork';
 import IngredientList from './IngredientList';
+import Carousel from './carousel';
 
 
 
@@ -23,6 +24,7 @@ class App extends React.Component {
 
                 </div>
                 <Food2Fork />
+                <Carousel />
             </div>
         )
     }
