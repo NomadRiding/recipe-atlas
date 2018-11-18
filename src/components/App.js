@@ -1,34 +1,55 @@
+
 import React from 'react';
 import Navbar from './NavBar';
+import React, { Component } from 'react';
 
 
+import axios from 'axios';
 
+import Form from "./Form.js";
+import Recipes from './Recipes.js';
+import Pasta from './Pasta.js';
 
+class App extends Component {
 
+  state = {
+    recipeList: [],
+    hasRecipes: false
+  }
 
-class App extends React.Component {
-    // getRecipe = (e) => {
-    //     e.preventDefault();
-    //     let recipeName = e.target.elements.recipeName.value;
-    //     console.log(recipeName);
-        
-    // }
+  getRecipe = (e) => {
+    e.preventDefault();
+    axios.get(`https://www.food2fork.com/api/search`)
+    this.setState({ hasRecipes: true })
+  }
 
-    render() {
-        return (
-            <div>
-                <div className='head-content'>
-                <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet"/>
-                <h1 className='Recipe-Atlas'>A la Italiana</h1>
-                
-                 </div>
-                 <div>
-                 <Navbar></Navbar>
-                <div></div>
-                </div>
+  render() {
+    return (
+        <div>
+       <div>
+            <div className='head-content'>
+            <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet"/>
+            <h1 className='Recipe-Atlas'>A la Italiana</h1>
+
+             </div>
+             <div>
+             <Navbar></Navbar>
+        <div></div>
+        </div>
             </div>
-        )
-    }
+      <div className="App">
+        <header className="App-header">
+          <h1 className="App-title">Recipe Search</h1>
+        </header>
+        <Form getRecipe={this.getRecipe} />
+        { this.state.hasRecipes ? <Recipes /> : null }
+      </div>
+      <div>
+          <Pasta className="Pastalicious" />
+      </div>
+      </div>
+    )
+  }
 }
 
 export default App;
