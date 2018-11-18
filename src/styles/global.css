@@ -104,12 +104,6 @@ body {
    background: url("https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-4-600x858.jpg");
 }
 
-.pastaStuff {
-  display: flex;
-  border: 1px solid orangered;
-  margin-top: 50vh;
-
-}
 
 
 img {
@@ -221,6 +215,102 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px #f3f3f3 inset;
   -webkit-text-fill-color: #2c3e50 !important;
 }
+
+/***********Pasta Section ************/
+
+.pastaStuff {
+  display: flex;
+  border: 1px solid orangered;
+  margin-top: 50vh;
+}
+
+.pastaStuff h2 {
+  color: darkblue;
+}
+
+.optionBar {
+  display: flex;
+  height: 3vh;
+  justify-content: center;
+  align-content: center;
+}
+
+.titleStuff {
+  display: flex;
+  border: 1px solid orangered;
+}
+
+.titleStuff h2 {
+  color: darkblue;
+}
+
+.optionBarCont {
+  display: flex;
+  height: 3vh;
+}
+
+.pastaGroup {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pastaCards {
+  display: flex;
+
+  border: 1px solid black;
+}
+
+.firstPasta {
+  border: 1px solid Black;
+  width: 30%;
+}
+
+.secondPasta {
+  border: 1px solid purple;
+  width: 30%;
+  margin-left: 10rem; 
+}
+
+.thirdPasta {
+  border: 1px solid green;
+  width: 30%;
+  margin-left: 10rem;
+}
+
+
+/****************** Pizza Portion *******************/
+
+.pizzaGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10vh;
+  width: 100%;
+}
+
+.pizzaCards {
+  display: flex;
+
+  border: 1px solid black;
+}
+
+.firstPizza {
+  border: 1px solid Black;
+  width: 30%;
+}
+
+.secondPizza {
+  border: 1px solid purple;
+  width: 30%;
+  margin-left: 10rem;
+}
+
+.thirdPizza {
+  border: 1px solid green;
+  width: 30%;
+  margin-left: 10rem;
+}
+
 
 /******** RECIPE.js ********/
 

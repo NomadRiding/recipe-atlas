@@ -8,7 +8,9 @@ import axios from 'axios';
 
 import Form from "./Form.js";
 import Recipes from './Recipes.js';
-import Pasta from './Pasta.js';
+import PastaDeck from './PastaDeck.js';
+import Pizza from './Pizza.js'
+
 
 class App extends Component {
 
@@ -45,7 +47,10 @@ class App extends Component {
         { this.state.hasRecipes ? <Recipes /> : null }
       </div>
       <div>
-          <Pasta className="Pastalicious" />
+          <PastaDeck />
+      </div>
+      <div>
+          <Pizza />
       </div>
       </div>
     )
