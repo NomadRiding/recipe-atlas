@@ -1,8 +1,3 @@
-// import React from 'react';
-// import { render } from 'react-dom';
-
-
-
 // class Carousel extends React.Component {
 
 //   render() {

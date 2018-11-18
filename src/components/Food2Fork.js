@@ -315,13 +315,13 @@ var RES = {
 //     );
 
 class Food2Fork extends React.Component {
-        constructor() {
+    constructor() {
         super();
-        this.state = {
-            recipeList: [],
-            selectedRecipe: {},
-            hasRecipes: false
-        }
+            this.state = {
+                recipeList: [],
+                selectedRecipe: {},
+                hasRecipes: false
+            }
         this.updateRecipeList = this.updateRecipeList.bind(this);
     }
     updateRecipeList(recipeList) {
