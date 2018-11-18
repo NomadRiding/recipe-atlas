@@ -1,15 +1,15 @@
 
 import React from 'react';
 import Navbar from './NavBar';
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 
 import axios from 'axios';
 
-import Form from "./Form.js";
 import Recipes from './Recipes.js';
 import PastaDeck from './PastaDeck.js';
 import Pizza from './Pizza.js'
+import { apiKey } from './config';
 
 
 class App extends Component {
@@ -21,39 +21,36 @@ class App extends Component {
 
   getRecipe = (e) => {
     e.preventDefault();
-    axios.get(`https://www.food2fork.com/api/search`)
-    this.setState({ hasRecipes: true })
+    axios.get(`https://cors-anywhere.herokuapp.com/https://www.food2fork.com/api/search?${apiKey}`)
+    .then((req, res) => {
+      this.setState({ hasRecipes: true })
+      console.log(res.data)
+    })
   }
 
   render() {
-    return (
+    return <div>
         <div>
-       <div>
-            <div className='head-content'>
-            <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet"/>
-            <h1 className='Recipe-Atlas'>A la Italiana</h1>
-
-             </div>
-             <div>
-             <Navbar></Navbar>
-        <div></div>
-        </div>
+          <div className="head-content">
+            <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet" />
+            <h1 className="Recipe-Atlas">A la Italiana</h1>
+            <div className="App">
+              
+              {this.state.hasRecipes ? <Recipes /> : null}
             </div>
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Recipe Search</h1>
-        </header>
-        <Form getRecipe={this.getRecipe} />
-        { this.state.hasRecipes ? <Recipes /> : null }
-      </div>
-      <div>
+          </div>
+          <div>
+            <Navbar getRecipe={this.getRecipe} />
+            <div />
+          </div>
+        </div>
+        <div>
           <PastaDeck />
-      </div>
-      <div>
+        </div>
+        <div>
           <Pizza />
-      </div>
-      </div>
-    )
+        </div>
+      </div>;
   }
 }
 

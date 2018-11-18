@@ -6,17 +6,18 @@
     padding-left:1rem;
     justify-content:flex-start;
     width:15rem;
-    border:solid;
     height:10rem;
     margin-left:0rem;
-    margin-top:0rem;
+    margin-top:1rem;
+    color: cyan;
     
 }
 .head-content {
     border:solid black;
     display:flex;
     justify-content: column;
-    height:10rem;
+    height:5rem;
+    margin-top: 0px;
 }
 
 .navWide {
@@ -27,9 +28,16 @@
 .navbar {
     border:solid black;
     overflow: hidden;
-    background-color: #333;
+    background-color: #2B3E50;
     font-family: Arial;
     top:0;
+    display: flex;
+    align-items: center;
+  }
+
+  .brand {
+    display: flex;
+    justify-content: space-between;
   }
   
   /* Links inside the navbar */
@@ -42,6 +50,19 @@
     text-decoration: none;
   }
   
+  .searchform {
+    border: 1px solid pink;
+    justify-content: center;
+  }
+
+  .center {
+    margin-left: 25vw;
+    display: flex;
+    justify-content: center;
+
+  }
+
+
   /* The dropdown container */
   .dropdown {
     float: left;
@@ -102,6 +123,8 @@
 body {
   background:#f3f3f3;
    background: url("https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-4-600x858.jpg");
+   background-repeat: no-repeat;
+   background-size: 100vw;
 }
 
 
@@ -136,7 +159,10 @@ button:focus {
 
 
 .App-title {
+  display: flex;
   font-size: 1.5em;
+  justify-content: center;
+  color: white;
 }
 
 .recipe_buttons {
