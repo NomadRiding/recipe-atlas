@@ -1,7 +1,6 @@
 import React from 'react';
-import axios from 'axios';
-import Food2Fork from './Food2Fork';
-import IngredientList from './IngredientList';
+import Navbar from './NavBar';
+
 
 
 
@@ -18,11 +17,15 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <div>
-                <h1>I am a Recipe App</h1>
-
+                <div className='head-content'>
+                <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet"/>
+                <h1 className='Recipe-Atlas'>A la Italiana</h1>
+                
+                 </div>
+                 <div>
+                 <Navbar></Navbar>
+                <div></div>
                 </div>
-                <Food2Fork />
             </div>
         )
     }
