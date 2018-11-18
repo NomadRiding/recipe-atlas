@@ -1,3 +1,6 @@
+
+import React from 'react';
+import Navbar from './NavBar';
 import React, { Component } from 'react';
 
 
@@ -23,6 +26,17 @@ class App extends Component {
   render() {
     return (
         <div>
+       <div>
+            <div className='head-content'>
+            <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet"/>
+            <h1 className='Recipe-Atlas'>A la Italiana</h1>
+
+             </div>
+             <div>
+             <Navbar></Navbar>
+        <div></div>
+        </div>
+            </div>
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Recipe Search</h1>
