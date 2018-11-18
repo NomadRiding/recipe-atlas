@@ -1,33 +1,41 @@
-import React from 'react';
+import React, { Component } from 'react';
+
+
 import axios from 'axios';
-import Food2Fork from './Food2Fork';
-import IngredientList from './IngredientList';
-import Carousel from './carousel';
 
+import Form from "./Form.js";
+import Recipes from './Recipes.js';
+import Pasta from './Pasta.js';
 
+class App extends Component {
 
+  state = {
+    recipeList: [],
+    hasRecipes: false
+  }
 
+  getRecipe = (e) => {
+    e.preventDefault();
+    axios.get(`https://www.food2fork.com/api/search`)
+    this.setState({ hasRecipes: true })
+  }
 
-class App extends React.Component {
-    // getRecipe = (e) => {
-    //     e.preventDefault();
-    //     let recipeName = e.target.elements.recipeName.value;
-    //     console.log(recipeName);
-        
-    // }
-
-    render() {
-        return (
-            <div>
-                <div>
-                <h1>I am a Recipe App</h1>
-
-                </div>
-                <Food2Fork />
-                <Carousel />
-            </div>
-        )
-    }
+  render() {
+    return (
+        <div>
+      <div className="App">
+        <header className="App-header">
+          <h1 className="App-title">Recipe Search</h1>
+        </header>
+        <Form getRecipe={this.getRecipe} />
+        { this.state.hasRecipes ? <Recipes /> : null }
+      </div>
+      <div>
+          <Pasta className="Pastalicious" />
+      </div>
+      </div>
+    )
+  }
 }
 
 export default App;
