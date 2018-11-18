@@ -9,7 +9,6 @@ import axios from 'axios';
 import Recipes from './Recipes.js';
 import PastaDeck from './PastaDeck.js';
 import Pizza from './Pizza.js'
-import { apiKey } from './config';
 
 
 class App extends Component {
@@ -19,10 +18,11 @@ class App extends Component {
     hasRecipes: false
   }
 
+
   getRecipe = (e) => {
     e.preventDefault();
-    axios.get(`https://cors-anywhere.herokuapp.com/https://www.food2fork.com/api/search?${apiKey}`)
-    .then((req, res) => {
+    axios.get(`/api`)
+    .then((res) => {
       this.setState({ hasRecipes: true })
       console.log(res.data)
     })
@@ -36,7 +36,7 @@ class App extends Component {
             <h1 className="Recipe-Atlas">A la Italiana</h1>
             <div className="App">
               
-              {this.state.hasRecipes ? <Recipes /> : null}
+              {/* {this.state.hasRecipes ? <Recipes /> : null} */}
             </div>
           </div>
           <div>
