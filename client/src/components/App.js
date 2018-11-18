@@ -8,7 +8,8 @@ import axios from 'axios';
 
 import Recipes from './Recipes.js';
 import PastaDeck from './PastaDeck.js';
-import Pizza from './Pizza.js'
+import Pizza from './Pizza.js';
+import PastaCarousel from './RealCarousel.js';
 
 
 class App extends Component {
@@ -35,7 +36,7 @@ class App extends Component {
             <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet" />
             <h1 className="Recipe-Atlas">A la Italiana</h1>
             <div className="App">
-              
+
               {/* {this.state.hasRecipes ? <Recipes /> : null} */}
             </div>
           </div>
@@ -49,6 +50,9 @@ class App extends Component {
         </div>
         <div>
           <Pizza />
+        </div>
+        <div>
+          <PastaCarousel />
         </div>
       </div>;
   }
