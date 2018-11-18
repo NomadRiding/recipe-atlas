@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { apiKey } from './config.js';
+import { apiKey } from '../../config.js';
 
 var RES = {
     "count": 30,
