@@ -16,13 +16,17 @@ class Footer extends React.Component {
                 <div className="Footer-links">
                     <p>Connect with us!</p>
                     <div className='social-media-icons'>
-                    <img id='twitter' src={twitterImg} alt='twitter'/>
-                    <img id='instagram' src={instagramImg}/>
+                        <a href="https://twitter.com/Italian35596740">{/*for clickable images, always but the href FIRST*/}
+                            <img id='twitter' src={twitterImg} alt='twitter'/>{/*THEN include the image inside the <a> element*/}
+                        </a> 
+                        <a href="https://www.instagram.com/alaitaliana_/"> 
+                            <img id='instagram' src={instagramImg}/>
+                        </a> 
                     </div>
-                    </div>
+                </div>
                     <div className='Footer2'>
                     <p>&copy;2018 Team-Phoenix,
-                    All rights reserved
+                        All rights reserved
                     </p>
                    </div>
                  
