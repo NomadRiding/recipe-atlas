@@ -437,3 +437,13 @@ input:-webkit-autofill {
   padding-left:10px;
   padding-top:10px;
 }
+.Footer2 {
+  display:flex;
+  margin-top:1rem;
+}
+
+.social-media-icons img {
+  height:3rem;
+  width:3rem;
+  margin-left:0.3rem;
+}
