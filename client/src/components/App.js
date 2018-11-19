@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from './NavBar';
 import { Component } from 'react';
@@ -10,8 +9,10 @@ import axios from 'axios';
 
 import Recipes from './Recipes.js';
 import PastaDeck from './PastaDeck.js';
+import DessertDeck from './Dessert';
 import Pizza from './Pizza.js';
 import PastaCarousel from './RealCarousel.js';
+
 
 
 class App extends Component {
@@ -39,8 +40,6 @@ class App extends Component {
             <h1 className="Recipe-Atlas">A la Italiana</h1>
             <img className="chefStashe" src={chefStashe} alt="Chef Mustache" />
             <div className="App">
-
-              {/* {this.state.hasRecipes ? <Recipes /> : null} */}
             </div>
           </div>
           <div>
@@ -58,7 +57,11 @@ class App extends Component {
           <Pizza />
         </div>
         <div>
+
           <Footer></Footer>
+
+          <DessertDeck />
+
         </div>
 
       </div>;

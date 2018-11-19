@@ -14,10 +14,6 @@ class Root extends React.Component {
             <div>
                 <BrowserRouter>
                     <div>
-                        <header>
-                            <Link to="/">Home</Link>
-                            <Link to="/about">About</Link>
-                        </header>
                         <Route exact path="/" component={App} />
                         <Route path="/about" component={About} />
                     </div>
