@@ -51,9 +51,6 @@ class App extends Component {
           </div>
         </div>
         <div>
-          <PastaCarousel />
-        </div>
-        <div>
           <PastaDeck />
         </div>
         <div>
