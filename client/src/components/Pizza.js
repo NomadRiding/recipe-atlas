@@ -41,8 +41,8 @@ pizzaComponents = pizzas.map(([src, title, subtitle, text], i) => {
         </CardBody>
     </Card>)
 }),
-pizzaOptions = pizzas.map(([_, title, __, ___]) => {
-    return <option value={title}>{title}</option>
+pizzaOptions = pizzas.map(([_, title, __, ___], i) => {
+    return <option key={`option${i}`} value={title}>{title}</option>
 });
 
 class PizzaDeck extends React.Component {
