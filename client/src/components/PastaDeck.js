@@ -1,6 +1,5 @@
 import React from 'react';
-// import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBody } from 'reactstrap';
-import { Card, Icon, Image } from 'semantic-ui-react';
+import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBody } from 'reactstrap';
 const pastas = [
   [
     'https://www.giallozafferano.it/images/ricette/198/19843/foto_hd/hd650x433_wm.jpg',
@@ -13,21 +12,50 @@ const pastas = [
     'This is an incredibly moist, intensely chocolate cake, perfect for chocoholics',
   ],
   [
-    'https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto/v1/hellofresh_s3/image/tuscan-sausage-and-pepper-spaghetti-743e2dd9.jpg',
+    'https://getinspiredeveryday.com/food/wp-content/uploads/sites/5/2015/11/Creamy-Sundried-Tomato-Pasta-with-Italian-Sausage-and-Veggies-GI-365-6.jpg',
     'Creamy Tuscan Sausage Pasta',
     'This recipe is a family gem that was passed down from my grandmother and mother. Garnished with shaved lemon zest, the moist four-layer cake is the perfect dessert when you want to impress',
   ],
 ],
-pastaComponents = pastas.map(([src, title, description], i) => {
-  return (<Card key={`pasta_${i}`}>
-    <Image src={src} />
-    <Card.Content>
-      <Card.Header>{title}</Card.Header>
-      <Card.Description>{description}</Card.Description>
-    </Card.Content>
-  </Card>)
-}),
-PastaDeck = () => pastaComponents;
+pastaComponents = pastas.map(([src, title, subtitle, text], i) => {
+    return (
+      <Card className="pasta" key={`pasta${i}`}>
+      <CardImg src={src} alt="Card image cap" />
+      <CardBody>
+          <CardTitle>{title}</CardTitle>
+          <CardSubtitle>{subtitle}</CardSubtitle>
+          <CardText>
+              {text}
+                  </CardText>
+          <Button>Button</Button>
+      </CardBody>
+    </Card>
+  )
+  }),
+  pastaOptions = pastas.map(([_, title, __, ___], i) => {
+    return <option key={`option${i}`} value={title}>{title}</option>
+  });
+  
+  class PastaDeck extends React.Component {
+    render() {
+        return <div>
+            <div>
+              <div className="titleStuff">
+                <select className="optionBarCont" name="select">
+                  {pastaOptions}
+                </select>
+                <h2>Pasta</h2>
+              </div>
+            </div>
+            
+            <div className="pizzaCards">
+              <CardDeck className="pizzaCards">
+                {pastaComponents}
+              </CardDeck>
+            </div>
+          </div>;
+    }
+  }
 export default PastaDeck;
 
 
