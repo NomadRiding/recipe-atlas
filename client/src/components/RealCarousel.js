@@ -10,6 +10,8 @@ const image = {
 
 const PastaCarousel = () => {
   return(
+    <div>
+    <div class = "PastaCarousel">
     <Carousel style={image}>
       <Carousel.Item>
         <img alt="900x500" src={pasta1} alt="No picture" />
@@ -33,6 +35,8 @@ const PastaCarousel = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+  </div>
+</div>
   )
 }
 
