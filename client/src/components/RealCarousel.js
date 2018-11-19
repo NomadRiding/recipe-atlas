@@ -1,14 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import pasta1 from './Images/pasta1.jpg';
-import pasta2 from './Images/pasta2.jpg';
-import pasta3 from './Images/pasta3.webp';
-const pizza1 = './Images/pizza1.jpg';
-const pizza2 = './Images/pizza2.jpg';
-const pizza3 = './Images/pizza3.jpg';
-const dessert1 = './Images/dessert1.jpg';
-const dessert2 = './Images/dessert2.jpg';
-const dessert3 = './Images/dessert3.jpg';
 
 const image = {
   height: "500px",
@@ -24,61 +16,22 @@ const PastaCarousel = () => {
       <Carousel.Item>
         <img width={900} height={500} src={pasta1} alt="No picture" />
         <Carousel.Caption>
-          <h3>Pasta allo scarpariello</h3>
-          <p>Spaguetti with tomato and cheese, classic and delicious</p>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img width={900} height={500} src={pasta1} />
         <Carousel.Caption>
-          <h3>Italian Chicken Alfredo</h3>
-          <p>The classic pasta we just cannot seem to get enough of</p>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img width={900} height={500} src={pasta1} />
         <Carousel.Caption>
-          <h3>Creamy Tuscan Sausage Pasta</h3>
-          <p>Quick and easy linguine recipe you can never go wrong with</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img alt="900x500" src={pizza1} alt="No picture" />
-        <Carousel.Caption>
-          <h3>Marguerita Pizza</h3>
-          <p>Simple, yet delicious</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img alt="900x500" src={pizza2} alt="No picture" />
-        <Carousel.Caption>
-          <h3>Pizza Arrotolata</h3>
-          <p>A fusion between pizza and a wrap</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img alt="900x500" src={pizza3} alt="No picture" />
-        <Carousel.Caption>
-          <h3>Pizza Fritta</h3>
-          <p>It is just like pizza, but fried!</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-     <Carousel.Item>
-        <img alt="900x500" src={dessert1} alt="No picture" />
-        <Carousel.Caption>
-          <h3>Tiramisu</h3>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img alt="900x500" src={dessert2} alt="No picture" />
-        <Carousel.Caption>
-          <h3>Chocolate Amaretto Cake</h3>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img alt="900x500" src={dessert3} alt="No picture" />
-        <Carousel.Caption>
-          <h3>Lemon Ricotta Cake</h3>
+          <h3>Third slide label</h3>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
