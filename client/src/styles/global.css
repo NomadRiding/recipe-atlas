@@ -174,7 +174,7 @@ button:focus {
   color: white;
 }
 
-
+/*
 .PastaCarousel {
   display: flex;
   align-content: flex-start;
@@ -182,7 +182,7 @@ button:focus {
 /* flex-direction: row;
  margin-top: 10vh;
   width: 100%; */
-}
+/* } */
 
 
 
@@ -271,6 +271,7 @@ input:-webkit-autofill {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 /***********Pasta Section ************/
@@ -287,9 +288,10 @@ input:-webkit-autofill {
 
 .optionBar {
   display: flex;
-  height: 3vh;
+  height: 4vh;
   justify-content: center;
   align-content: center;
+  margin: 1.5em;
 }
 
 .titleStuff {
@@ -303,7 +305,10 @@ input:-webkit-autofill {
 
 .optionBarCont {
   display: flex;
-  height: 3vh;
+  height: 4vh;
+  justify-content: center;
+  align-content: center;
+  margin: 1.5em;
 }
 
 .pastaGroup {
