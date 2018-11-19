@@ -1,7 +1,8 @@
 import React from 'react';
 import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBody } from 'reactstrap';
-
-
+const pasta1 = './Images/pasta1.jpg';
+const pasta2 = './Images/pasta2.jpg';
+const pasta3 = './Images/pasta3.jpg';
 
 
 class PastaDeck extends React.Component {
@@ -9,7 +10,7 @@ class PastaDeck extends React.Component {
         return(
             <div>
                 <div>
-                <div className="pastaStuff"> 
+                <div className="pastaStuff">
                 <select className="optionBar" name="select">
                     <option value="first Dish">First Pasta</option>
                     <option value="second Dish">Second Pasta</option>
@@ -21,7 +22,7 @@ class PastaDeck extends React.Component {
                 <div className="pastaGroup">
                 <CardDeck className="pastaCards">
                     < Card className = "firstPasta" >
-                    <CardImg src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
+                    <CardImg src={pasta2} alt="Card image cap" />
                     <CardBody>
                         <CardTitle>Card title</CardTitle>
                         <CardSubtitle>Card subtitle</CardSubtitle>
@@ -30,7 +31,7 @@ class PastaDeck extends React.Component {
                     </CardBody>
                     </Card>
                      < Card className = "secondPasta" >
-                    <CardImg src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
+                    <CardImg src={pasta1} alt="Card image cap" />
                     <CardBody>
                         <CardTitle>Card title</CardTitle>
                         <CardSubtitle>Card subtitle</CardSubtitle>
@@ -39,7 +40,7 @@ class PastaDeck extends React.Component {
                     </CardBody>
                     </Card>
                      < Card className = "thirdPasta" >
-                    <CardImg src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
+                    <CardImg src={pasta3} alt="Card image cap" />
                     <CardBody>
                         <CardTitle>Card title</CardTitle>
                         <CardSubtitle>Card subtitle</CardSubtitle>

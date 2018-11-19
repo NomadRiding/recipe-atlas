@@ -1,7 +1,8 @@
 import React from 'react';
 import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBody } from 'reactstrap';
-
-
+const pizza1 = './Images/pizza1.jpg';
+const pizza2 = './Images/pizza2.jpg';
+const pizza3 = './Images/pizza3.jpg';
 
 
 class PizzaDeck extends React.Component {
@@ -21,7 +22,7 @@ class PizzaDeck extends React.Component {
                 <div className="pizzaGroup">
                 <CardDeck className="pizzaCards">
                     < Card className = "firstPizza" >
-                    <CardImg src="https://assets.marthastewart.com/styles/wmax-1500/d31/pizza-margherita-0606-mla102155/pizza-margherita-0606-mla102155_sq.jpg?itok=3FuCCotM" alt="Card image cap" />
+                    <CardImg src={pizza2} alt="Card image cap" />
                     <CardBody>
                         <CardTitle>Marguerita Pizza</CardTitle>
                         <CardSubtitle>Card subtitle</CardSubtitle>
@@ -30,7 +31,7 @@ class PizzaDeck extends React.Component {
                     </CardBody>
                     </Card>
                      < Card className = "secondPizza" >
-                    <CardImg src="https://www.giallozafferano.it/images/ricette/36/3601/foto_hd/hd450x300.jpg" alt="Card image cap" />
+                    <CardImg src={pizza1} alt="Card image cap" />
                     <CardBody>
                         <CardTitle>Pizza Arrotolata</CardTitle>
                         <CardSubtitle>Card subtitle</CardSubtitle>
@@ -39,7 +40,7 @@ class PizzaDeck extends React.Component {
                     </CardBody>
                     </Card>
                      < Card className = "thirdPizza" >
-                    <CardImg src="http://www.ricettapizzanapoletana.it/images/pizza_fritta_napoletana.jpg" alt="Card image cap" />
+                    <CardImg src={pizza3} alt="Card image cap" />
                     <CardBody>
                         <CardTitle>Pizza Fritta</CardTitle>
                         <CardSubtitle>Fried Pizza</CardSubtitle>

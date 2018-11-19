@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from './NavBar';
 import { Component } from 'react';
@@ -8,8 +7,10 @@ import axios from 'axios';
 
 import Recipes from './Recipes.js';
 import PastaDeck from './PastaDeck.js';
+import DessertDeck from './dessert.js';
 import Pizza from './Pizza.js';
 import PastaCarousel from './RealCarousel.js';
+
 
 
 class App extends Component {
@@ -46,13 +47,16 @@ class App extends Component {
           </div>
         </div>
         <div>
+          <PastaCarousel />
+        </div>
+        <div>
           <PastaDeck />
         </div>
         <div>
           <Pizza />
         </div>
         <div>
-          <PastaCarousel />
+          <DessertDeck />
         </div>
       </div>;
   }

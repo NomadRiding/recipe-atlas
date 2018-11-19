@@ -1,7 +1,7 @@
 
 .Recipe-Atlas {
     display:flex;
-    font-family: 'Italianno', cursive;
+    font-family: 'Italianno', cursive, bold;
     font-size: 3rem;
     padding-left:1rem;
     justify-content:flex-start;
@@ -9,8 +9,8 @@
     height:10rem;
     margin-left:0rem;
     margin-top:1rem;
-    color: cyan;
-    
+    color: 	#8B0000;
+
 }
 .head-content {
     border:solid black;
@@ -39,7 +39,7 @@
     display: flex;
     justify-content: space-between;
   }
-  
+
   /* Links inside the navbar */
   .navbar a {
     float: left;
@@ -49,7 +49,7 @@
     padding: 14px 16px;
     text-decoration: none;
   }
-  
+
   .searchform {
     border: 1px solid pink;
     justify-content: center;
@@ -68,10 +68,10 @@
     float: left;
     overflow: hidden;
   }
-  
+
   /* Dropdown button */
   .dropdown .dropbtn {
-    font-size: 16px; 
+    font-size: 16px;
     border: none;
     outline: none;
     color: white;
@@ -80,12 +80,12 @@
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
   }
-  
+
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: red;
   }
-  
+
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
@@ -95,7 +95,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  
+
   /* Links inside the dropdown */
   .dropdown-content a {
     float: none;
@@ -105,12 +105,12 @@
     display: block;
     text-align: left;
   }
-  
+
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
     background-color: #ddd;
   }
-  
+
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
@@ -122,9 +122,9 @@
 
 body {
   background:#f3f3f3;
-   background: url("https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-4-600x858.jpg");
-   background-repeat: no-repeat;
-   background-size: 100vw;
+  background:#DEB887;
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
 
 
@@ -283,7 +283,6 @@ input:-webkit-autofill {
 
 .pastaCards {
   display: flex;
-
   border: 1px solid black;
 }
 
@@ -295,7 +294,7 @@ input:-webkit-autofill {
 .secondPasta {
   border: 1px solid purple;
   width: 30%;
-  margin-left: 10rem; 
+  margin-left: 10rem;
 }
 
 .thirdPasta {
@@ -386,4 +385,3 @@ input:-webkit-autofill {
   text-transform: uppercase;
   font-weight: 500;
 }
-

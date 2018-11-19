@@ -1,5 +1,5 @@
-import React from 'react';
-class { Carousel } extends React.Component;
+//import React from 'react';
+//class { Carousel } extends React.Component;
 
 //   render() {
 //     return (
