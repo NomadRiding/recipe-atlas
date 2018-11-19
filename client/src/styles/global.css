@@ -1,19 +1,19 @@
 
 .Recipe-Atlas {
     display:flex;
-    font-family: 'Italianno', cursive, bold;
-    font-size: 3rem;
+    font-family: 'Italianno', cursive;
+    font-size: 4rem;
     padding-left:1rem;
+    padding-bottom:4rem;
     justify-content:flex-start;
-    width:15rem;
+    width:25rem;
     height:10rem;
     margin-left:0rem;
-    margin-top:1rem;
-    color: 	#8B0000;
+    margin-top:.51rem;
+    color: #8b0000;
 
 }
 .head-content {
-    border:solid black;
     display:flex;
     justify-content: column;
     height:5rem;
@@ -51,7 +51,7 @@
   }
 
   .searchform {
-    border: 1px solid pink;
+    /* border: 1px solid black; */
     justify-content: center;
   }
 
@@ -62,6 +62,14 @@
 
   }
 
+  .chefStashe {
+    height: 7vh;
+    width: 5vw;
+    margin: 0, auto;
+    padding: 0;
+    margin-top: -2vh;
+    margin-left: -6vw;
+  }
 
   /* The dropdown container */
   .dropdown {
@@ -121,10 +129,11 @@
 } */
 
 body {
-  background:#f3f3f3;
-  background:#DEB887;
-  background-repeat: no-repeat;
-  background-size: 100vw;
+  margin-top: 3vh;
+  background:#fdd6a2;
+   /* background: url("https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-4-600x858.jpg"); */
+   background-repeat: no-repeat;
+   background-size: 100vw;
 }
 
 
@@ -164,6 +173,18 @@ button:focus {
   justify-content: center;
   color: white;
 }
+
+/*
+.PastaCarousel {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+/* flex-direction: row;
+ margin-top: 10vh;
+  width: 100%; */
+/* } */
+
+
 
 .recipe_buttons {
   border: solid 2px #e74c3c;
@@ -242,6 +263,17 @@ input:-webkit-autofill {
   -webkit-text-fill-color: #2c3e50 !important;
 }
 
+
+
+/********    PastaCarousel  *******/
+.PastaCarousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
 /***********Pasta Section ************/
 
 .pastaStuff {
@@ -256,9 +288,10 @@ input:-webkit-autofill {
 
 .optionBar {
   display: flex;
-  height: 3vh;
+  height: 4vh;
   justify-content: center;
   align-content: center;
+  margin: 1.5em;
 }
 
 .titleStuff {
@@ -272,7 +305,10 @@ input:-webkit-autofill {
 
 .optionBarCont {
   display: flex;
-  height: 3vh;
+  height: 4vh;
+  justify-content: center;
+  align-content: center;
+  margin: 1.5em;
 }
 
 .pastaGroup {

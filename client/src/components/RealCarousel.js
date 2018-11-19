@@ -11,30 +11,32 @@ const dessert2 = './Images/dessert2.jpg';
 const dessert3 = './Images/dessert3.jpg';
 
 const image = {
-  height: "100vh",
-  width: '100vh',
+  height: "500px",
+  width: '900px',
   margin: 'auto'
 }
 
 const PastaCarousel = () => {
   return(
+    <div>
+    <div class = "PastaCarousel">
     <Carousel style={image}>
       <Carousel.Item>
-        <img alt="900x500" src={pasta1} alt="No picture" />
+        <img width={900} height={500} src={pasta1} alt="No picture" />
         <Carousel.Caption>
           <h3>Pasta allo scarpariello</h3>
           <p>Spaguetti with tomato and cheese, classic and delicious</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img width={900} height={500} alt="900x500" src={pasta2} />
+        <img width={900} height={500} src={pasta1} />
         <Carousel.Caption>
           <h3>Italian Chicken Alfredo</h3>
           <p>The classic pasta we just cannot seem to get enough of</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img width={900} height={500} alt="900x500" src={pasta3} />
+        <img width={900} height={500} src={pasta1} />
         <Carousel.Caption>
           <h3>Creamy Tuscan Sausage Pasta</h3>
           <p>Quick and easy linguine recipe you can never go wrong with</p>
@@ -80,6 +82,8 @@ const PastaCarousel = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+  </div>
+</div>
   )
 }
 
