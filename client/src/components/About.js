@@ -1,15 +1,10 @@
-import React from 'react';
-import NavBar from './NavBar';
+// import React from 'react';
+// import NavBar from './NavBar';
 
-class About extends React.Component {
-    render() {
-        return (
-            <div>
-                <NavBar />
-            </div>
-        )
-    }
-}
+// const About = props => {
+//     return (
+//         <container 
+//     )
+// }
 
-
-export default About;
+// export default About;
