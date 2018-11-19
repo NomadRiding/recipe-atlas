@@ -10,7 +10,7 @@ return (
       <span className="brand">
         
         <a href="/">Home</a>
-        <a href="./About.js">About</a>
+        <a href="./About">About</a>
         <div className="dropdown">
           <button className="dropbtn">
             Dropdown

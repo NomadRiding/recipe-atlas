@@ -39,8 +39,6 @@ class App extends Component {
             <h1 className="Recipe-Atlas">A la Italiana</h1>
             <img className="chefStashe" src={chefStashe} alt="Chef Mustache" />
             <div className="App">
-
-              {/* {this.state.hasRecipes ? <Recipes /> : null} */}
             </div>
           </div>
           <div>
