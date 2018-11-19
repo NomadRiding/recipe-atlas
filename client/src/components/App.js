@@ -3,7 +3,7 @@ import Navbar from './NavBar';
 import { Component } from 'react';
 import chefStashe from './Images/chefStashe.png';
 import About from './About.js';
-
+import Footer from './Footer'
 
 import axios from 'axios';
 
@@ -57,7 +57,11 @@ class App extends Component {
           <Pizza />
         </div>
         <div>
+
+          <Footer></Footer>
+
           <DessertDeck />
+
         </div>
 
       </div>;
