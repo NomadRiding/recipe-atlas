@@ -44,6 +44,9 @@ class App extends Component {
             <Navbar getRecipe={this.getRecipe} />
             <div />
           </div>
+          <div>
+            <PastaCarousel />
+          </div>
         </div>
         <div>
           <PastaDeck />
@@ -51,9 +54,7 @@ class App extends Component {
         <div>
           <Pizza />
         </div>
-        <div>
-          <PastaCarousel />
-        </div>
+
       </div>;
   }
 }
