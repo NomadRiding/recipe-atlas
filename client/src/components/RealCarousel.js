@@ -3,8 +3,8 @@ import { Carousel } from 'react-bootstrap';
 import pasta1 from './Images/pasta1.jpg';
 
 const image = {
-  height: "100vh",
-  width: '100vh',
+  height: "500px",
+  width: '900px',
   margin: 'auto'
 }
 
@@ -14,21 +14,21 @@ const PastaCarousel = () => {
     <div class = "PastaCarousel">
     <Carousel style={image}>
       <Carousel.Item>
-        <img alt="900x500" src={pasta1} alt="No picture" />
+        <img width={900} height={500} src={pasta1} alt="No picture" />
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img width={900} height={500} alt="900x500" src={pasta1} />
+        <img width={900} height={500} src={pasta1} />
         <Carousel.Caption>
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img width={900} height={500} alt="900x500" src={pasta1} />
+        <img width={900} height={500} src={pasta1} />
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
