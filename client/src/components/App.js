@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from './NavBar';
 import { Component } from 'react';
 import chefStashe from './Images/chefStashe.png';
+import About from './About.js';
 
 
 import axios from 'axios';
