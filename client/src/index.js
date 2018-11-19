@@ -6,6 +6,8 @@ import App from './components/App';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './styles/global.css';
 import About from './components/About';
+// import Recipes from './components/Recipes.js';
+// import "semantic-ui-css/semantic.min.css";
 
 
 class Root extends React.Component {
@@ -16,6 +18,7 @@ class Root extends React.Component {
                     <div>
                         <Route exact path="/" component={App} />
                         <Route path="/about" component={About} />
+                        {/* <Route path='/recipes' component={Recipes} /> */}
                     </div>
                 </BrowserRouter>
             </div>

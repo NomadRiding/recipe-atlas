@@ -27,7 +27,7 @@ class App extends Component {
     e.preventDefault();
     axios.get(`/api`)
     .then((res) => {
-      this.setState({ hasRecipes: true })
+      this.setState({ hasRecipes: true, recipeList: res.data.recipes})
       console.log(res.data)
     })
   }
@@ -40,6 +40,8 @@ class App extends Component {
             <h1 className="Recipe-Atlas">A la Italiana</h1>
             <img className="chefStashe" src={chefStashe} alt="Chef Mustache" />
             <div className="App">
+
+              
             </div>
           </div>
           <div>
@@ -64,6 +66,7 @@ class App extends Component {
 
         </div>
 
+        {this.state.hasRecipes ? <Recipes recipes={this.state.recipeList} /> : null}
       </div>;
   }
 }
