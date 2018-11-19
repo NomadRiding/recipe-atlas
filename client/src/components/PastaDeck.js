@@ -7,9 +7,9 @@ import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, Car
 class PastaDeck extends React.Component {
     render() {
         return(
-            <div>
+            <div className="pastaGroup-A">
                 <div>
-                <div className="pastaStuff"> 
+                <div className="pastaStuff">
                 <select className="optionBar" name="select">
                     <option value="first Dish">First Pasta</option>
                     <option value="second Dish">Second Pasta</option>
