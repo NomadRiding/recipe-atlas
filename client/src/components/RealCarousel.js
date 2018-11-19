@@ -1,6 +1,8 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import pasta1 from './Images/pasta1.jpg';
+import pasta2 from './Images/pasta2.jpg';
+import pasta3 from './Images/Pizza2.jpg';
 
 const image = {
   height: "500px",
@@ -21,14 +23,14 @@ const PastaCarousel = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img width={900} height={500} src={pasta1} />
+        <img width={900} height={500} src={pasta2} />
         <Carousel.Caption>
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img width={900} height={500} src={pasta1} />
+        <img width={900} height={500} src={pasta3} />
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
