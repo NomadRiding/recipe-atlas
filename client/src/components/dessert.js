@@ -1,41 +1,40 @@
 import React from 'react';
-import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBody } from 'reactstrap';
+// import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBody } from 'reactstrap';
 import { Card, Icon, Image } from 'semantic-ui-react';
-const dessert1 ='./Images/dessert1.jpg';
-const dessert2 = './Images/dessert2.jpg';
-const dessert3 = './Images/dessert3.jpg';
-
-
-const DessertDeck = () => (
-  <Card>
-    <Image src={dessert1} />
+const desserts = [
+  [
+    'https://cocineroaficionado.com/wp-content/uploads/2015/09/tiraminu-s.jpg',
+    'Tiramisu',
+    'Tiramisu is an elegant and rich layered Italian dessert made with delicate ladyfinger cookies, espresso or instant espresso, mascarpone cheese, eggs, sugar, Marsala wine, rum and cocoa powder.' ,
+  ],
+  [
+    'https://images.eatsmarter.com/sites/default/files/styles/facebook/public/chocolate-amaretto-cake-with-cream-topping-525182.jpg',
+    'Chocolate Amaretto Cake',
+    'This is an incredibly moist, intensely chocolate cake, perfect for chocoholics',
+  ],
+  [
+    'https://cmt.azureedge.net/media/orig_lemon_ricotta_cake_with_candied_lemons_20170403134855560196absb4.jpg',
+    'Lemon Ricotta Cake',
+    'This recipe is a family gem that was passed down from my grandmother and mother. Garnished with shaved lemon zest, the moist four-layer cake is the perfect dessert when you want to impress',
+  ],
+],
+dessertComponents = desserts.map(([src, title, description], i) => {
+  return (<Card key={`dessert_${i}`}>
+    <Image src={src} />
     <Card.Content>
-      <Card.Header>Tiramisu</Card.Header>
-      <Card.Description>Tiramisu is an elegant and rich layered Italian dessert made with delicate ladyfinger cookies, espresso or instant espresso, mascarpone cheese, eggs, sugar, Marsala wine, rum and cocoa powder.</Card.Description>
+      <Card.Header>{title}</Card.Header>
+      <Card.Description>{description}</Card.Description>
     </Card.Content>
-  </Card>
-  <Card>
-    <Image src={dessert2} />
-    <Card.Content>
-      <Card.Header>Chocolate Amaretto Cake</Card.Header>
-      <Card.Description>This is an incredibly moist, intensely chocolate cake, perfect for chocoholics</Card.Description>
-    </Card.Content>
-  </Card>
-  <Card>
-    <Image src={dessert3} />
-    <Card.Content>
-      <Card.Header>Lemon Ricotta Cake</Card.Header>
-      <Card.Description>This recipe is a family gem that was passed down from my grandmother and mother. Garnished with shaved lemon zest, the moist four-layer cake is the perfect dessert when you want to impress</Card.Description>
-    </Card.Content>
-  </Card>
+  </Card>)
+}),
+DessertDeck = () => dessertComponents;
 
 
 
 
-
-
-)
-
+// lemon ricotta cake: https://cmt.azureedge.net/media/orig_lemon_ricotta_cake_with_candied_lemons_20170403134855560196absb4.jpg
+// chocolate amaretto cake: https://images.eatsmarter.com/sites/default/files/styles/facebook/public/chocolate-amaretto-cake-with-cream-topping-525182.jpg
+// tiramisu: https://cocineroaficionado.com/wp-content/uploads/2015/09/tiraminu-s.jpg
 
 
 

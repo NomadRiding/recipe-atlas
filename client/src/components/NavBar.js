@@ -12,7 +12,7 @@ return (
       <div className="dropdown">
         <button className="dropbtn">
           Dropdown
-          <i class="fa fa-caret-down" />
+          <i className="fa fa-caret-down" />
         </button>
         <div className="dropdown-content">
           <a href="./components/About.js">Link 1</a>
@@ -30,7 +30,7 @@ return (
   </div>
 );
 }
- 
+
 
 
 
