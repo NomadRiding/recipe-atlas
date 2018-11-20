@@ -60,17 +60,10 @@ class App extends Component {
           <Pizza />
         </div>
         <div>
-<<<<<<< HEAD
-          <Footer />
-        </div>
-        <div>
-        <DessertDeck />
-=======
           <DessertDeck />
         </div>
         <div>
         <Footer />
->>>>>>> e7a277c631e29fdb4c95fe6146176b051fc74c0e
         </div>
         {this.state.hasRecipes ? <Recipes recipes={this.state.recipeList} /> : null}
       </div>;
