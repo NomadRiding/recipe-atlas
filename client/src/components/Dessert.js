@@ -19,8 +19,8 @@ const desserts = [
   ],
 ].map(e => [...e.slice(0, 3), 'my subtitle', ...e.slice(2)]), // insert a subtitle
 dessertComponents = desserts.map(([src, title, subtitle, text], i) => {
-  return (<Card className="dessert" key={`dessert_${i}`}>
-  <CardImg src={src} alt="Card image cap" />
+  return (<Card key={`dessert_${i}`}>
+  <CardImg className="dessert-cards" src={src} alt="Card image cap" />
   <CardBody>
       <CardTitle>{title}</CardTitle>
       <CardSubtitle>{subtitle}</CardSubtitle>
@@ -47,8 +47,9 @@ class DessertDeck extends React.Component {
             </div>
           </div>
 
-          <div className="pizzaGroup">
-            <CardDeck className="pizzaCards">
+          
+          <div>
+            <CardDeck className="dessert-group">
                   {dessertComponents}
             </CardDeck>
           </div>

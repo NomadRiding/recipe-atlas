@@ -30,7 +30,7 @@ const pizzas = [
 ],
 pizzaComponents = pizzas.map(([src, title, subtitle, text], i) => {
     return (<Card className="pizza" key={`pizza_${i}`}>
-        <CardImg src={src} alt="Card image cap" />
+        <CardImg className='pizza-cards' src={src} alt="Card image cap" />
         <CardBody>
             <CardTitle>{title}</CardTitle>
             <CardSubtitle>{subtitle}</CardSubtitle>
@@ -56,9 +56,9 @@ class PizzaDeck extends React.Component {
                 <h2>Pizza</h2>
               </div>
             </div>
-
-            <div className="pizzaGroup">
-              <CardDeck className="pizzaCards">
+            
+            <div>
+              <CardDeck className="pizza-group">
                     {pizzaComponents}
               </CardDeck>
             </div>
