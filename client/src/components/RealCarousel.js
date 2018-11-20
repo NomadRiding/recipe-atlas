@@ -13,7 +13,7 @@ const image = {
 const PastaCarousel = () => {
   return(
     <div>
-    <div class = "PastaCarousel">
+    <div className = "PastaCarousel">
     <Carousel style={image}>
       <Carousel.Item>
         <img style={image} width={900} height={500} src={'https://www.giallozafferano.it/images/ricette/36/3601/foto_hd/hd450x300.jpg'} alt="No picture" />
