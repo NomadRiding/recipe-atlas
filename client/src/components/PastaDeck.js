@@ -29,7 +29,7 @@ pastaComponents = pastas.map(([src, title, subtitle, text], i) => {
               {text}
 
           </CardText>
-          <Button>Button</Button>
+          <Button className="button-pasta">view recipe</Button>
       </CardBody>
     </Card>
   )
