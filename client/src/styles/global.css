@@ -38,6 +38,7 @@
   .brand {
     display: flex;
     justify-content: space-between;
+  
   }
 
   /* Links inside the navbar */
@@ -420,4 +421,29 @@ input:-webkit-autofill {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+/* ----------------------------Footer----------------------------------> */
+
+.Footer {
+  display:flex;
+  flex-direction:column;
+  border:solid 1px;
+  height:15rem;
+  position:sticky;
+  bottom:0;
+  background-color:#2B3E50;
+  color:white;
+  padding-left:10px;
+  padding-top:10px;
+}
+.Footer2 {
+  display:flex;
+  margin-top:1rem;
+}
+
+.social-media-icons img {
+  height:3rem;
+  width:3rem;
+  margin-left:0.3rem;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -8,7 +8,6 @@ return (
   <header>
     <div className="navbar">
       <span className="brand">
-        
         <a href="/">Home</a>
         <a href="./About">About</a>
         <div className="dropdown">
@@ -30,7 +29,9 @@ return (
             placeholder="Search your recipe"
             name="recipeName"
           />
-          <button> Search </button>
+          {/* <Link to="/recipes"> */}
+            <button> Search </button>
+          {/* </Link> */}
         </form>
       </span>
     </div>
