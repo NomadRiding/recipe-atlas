@@ -10,7 +10,7 @@ const desserts = [
   [
     'https://images.eatsmarter.com/sites/default/files/styles/facebook/public/chocolate-amaretto-cake-with-cream-topping-525182.jpg',
     'Chocolate Amaretto Cake',
-    'This is an incredibly moist, intensely chocolate cake, perfect for chocoholics',
+    'This is an incredibly moist, intensely chocolate cake, perfect for chocoholics. That’s generally when you know that folks really like what you’ve made if they ask for the recipe and tell you for what event they plan to serve it.',
   ],
   [
     'https://cmt.azureedge.net/media/orig_lemon_ricotta_cake_with_candied_lemons_20170403134855560196absb4.jpg',
@@ -27,7 +27,7 @@ dessertComponents = desserts.map(([src, title, subtitle, text], i) => {
       <CardText>
           {text}
               </CardText>
-      <Button>Button</Button>
+      <Button className="button-Dessert">Button</Button>
   </CardBody>
 </Card>)
 }),
@@ -46,7 +46,7 @@ class DessertDeck extends React.Component {
               <h2>Dessert</h2>
             </div>
           </div>
-          
+
           <div className="pizzaGroup">
             <CardDeck className="pizzaCards">
                   {dessertComponents}
