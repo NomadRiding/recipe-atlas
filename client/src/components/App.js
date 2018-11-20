@@ -48,10 +48,12 @@ class App extends Component {
             <Navbar getRecipe={this.getRecipe} />
             <div />
           </div>
+          
           <div>
             <PastaCarousel />
 
           </div>
+          {this.state.hasRecipes ? <Recipes recipes={this.state.recipeList} /> : null}
         </div>
         <div>
           <PastaDeck />
@@ -62,10 +64,11 @@ class App extends Component {
         <div>
           <DessertDeck />
         </div>
+        
         <div>
         <Footer />
         </div>
-        {this.state.hasRecipes ? <Recipes recipes={this.state.recipeList} /> : null}
+       
       </div>;
   }
 }

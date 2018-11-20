@@ -21,14 +21,15 @@ const pastas = [
 pastaComponents = pastas.map(([src, title, subtitle, text], i) => {
     return (
       <Card className="pasta" key={`pasta${i}`}>
-      <CardImg src={src} alt="Card image cap" />
+      <CardImg className='pasta-cards' src={src} alt="Card image cap" />
       <CardBody>
           <CardTitle>{title}</CardTitle>
           <CardSubtitle>{subtitle}</CardSubtitle>
           <CardText>
               {text}
-                  </CardText>
-          <Button className="button-PastaDeck">Button</Button>
+
+          </CardText>
+          <Button className="button-pasta">view recipe</Button>
       </CardBody>
     </Card>
   )
@@ -48,9 +49,9 @@ pastaComponents = pastas.map(([src, title, subtitle, text], i) => {
                 <h2>Pasta</h2>
               </div>
             </div>
-
-            <div className="pizzaCards">
-              <CardDeck className="pizzaCards">
+            
+            <div>
+              <CardDeck className="pasta-group">
                 {pastaComponents}
               </CardDeck>
             </div>

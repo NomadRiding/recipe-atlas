@@ -28,7 +28,7 @@
 .navbar {
     border:solid black;
     overflow: hidden;
-    background-color: #2B3E50;
+    background-color: #A0522D;
     font-family: Arial;
     top:0;
     display: flex;
@@ -286,12 +286,22 @@ input:-webkit-autofill {
 
 .titleStuff {
   display: flex;
-  border: 1px solid orangered;
+  flex-direction:row;
 
 }
+.titleStuff1 {
+  display:flex;
+  flex-direction:row;
+  padding-top: 10rem;
+  font-family: 'Italianno', cursive;
+  font-size:3rem;
+} 
 
 .titleStuff h2 {
-  color: darkblue;
+  color: 	#A0522D;
+  font-family: 'Italianno', cursive;
+  font-size:3rem;
+  padding-bottom:1rem;
 }
 
 .optionBarCont {
@@ -300,36 +310,47 @@ input:-webkit-autofill {
   justify-content: center;
   align-content: center;
   margin: 1.5em;
+  margin-top:2.5rem;
 }
 
-.pastaGroup {
+.pasta-group {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10vh;
+  width: 100rem;
+  margin-top:1rem;
+  padding-left:1rem;
+  padding-right:2rem;
+  margin-right:18rem;
+  
+  
+
+  
 }
 
 .pastaCards {
   display: flex;
-  border: 1px solid black;
-}
+  flex-direction: row;
+  
+  
+  
 
-.firstPasta {
-  border: 1px solid Black;
-  width: 30%;
+  
+  
 }
-
-.secondPasta {
-  border: 1px solid purple;
-  width: 30%;
-  margin-left: 10rem;
+.pasta-cards {
+  display: flex;
+  flex-direction: column;
+  width:30rem;
+  justify-content: row;
+  padding-left:1rem;
+  padding-right:3rem;
+  margin-right:1rem;
+  margin-left:1rem;
+  border-radius:50%
 }
-
-.thirdPasta {
-  border: 1px solid green;
-  width: 30%;
-  margin-left: 10rem;
-}
-.button-PastaDeck{
+.button-pasta {
   padding: 5px 26px;
 font-size: 12px;
 text-align: center;
@@ -340,36 +361,67 @@ background-color: gray;
 border: none;
 border-radius: 15px;
 box-shadow: 0 3px #999;
-    }
+}
 
-.pizzaGroup {
+
+
+
+
+/****************** Pizza Portion *******************/
+
+
+.pizza-group {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   margin-top: 10vh;
-  width: 100%;
+  width: 100rem;
+  margin-top:1rem;
+  padding-left:1rem;
+  padding-right:2rem;
+  margin-right:18rem;
+
+
 }
 
-.pizzaCards {
+.pizza-cards {
   display: flex;
+  flex-direction: row;
+  width:30rem;
+  justify-content: center;
+  padding-left:1rem;
+  padding-right:2rem;
+  border-radius:50%
 
-  border: 1px solid black;
 }
 
-.firstPizza {
-  border: 1px solid Black;
-  width: 30%;
-}
 
-.secondPizza {
-  border: 1px solid purple;
-  width: 30%;
-  margin-left: 10rem;
-}
+/*********************************DESSERT**********************************/
+.dessert-cards {
+  display: flex;
+  flex-direction: column;
+  width:30rem;
+  justify-content: center;
+  padding-left:1rem;
+  padding-right:1rem;
+  margin-right:1rem;
+  border-radius:50%;
 
-.thirdPizza {
-  border: 1px solid green;
-  width: 30%;
-  margin-left: 10rem;
+}
+.dessert-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10vh;
+  width: 100rem;
+  margin-top:1rem;
+  padding-left:1rem;
+  padding-right:2rem;
+  margin-right:18rem;
+  margin-bottom:2rem;
+  border-radius:50%;
+  
+  
 }
 
 .button-Pizza{
@@ -458,7 +510,7 @@ box-shadow: 0 3px #999;
   height:15rem;
   position:sticky;
   bottom:0;
-  background-color:#2B3E50;
+  background-color:	#A0522D;
   color:white;
   padding-left:10px;
   padding-top:10px;
