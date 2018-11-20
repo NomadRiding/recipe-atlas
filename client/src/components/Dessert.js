@@ -27,7 +27,7 @@ dessertComponents = desserts.map(([src, title, subtitle, text], i) => {
       <CardText>
           {text}
               </CardText>
-      <Button className="button-Dessert">Button</Button>
+      <Button className="button-Dessert">view recipe</Button>
   </CardBody>
 </Card>)
 }),

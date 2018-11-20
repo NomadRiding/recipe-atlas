@@ -289,6 +289,13 @@ input:-webkit-autofill {
   flex-direction:row;
 
 }
+.titleStuff1 {
+  display:flex;
+  flex-direction:row;
+  padding-top: 10rem;
+  font-family: 'Italianno', cursive;
+  font-size:3rem;
+} 
 
 .titleStuff h2 {
   color: 	#A0522D;
@@ -342,6 +349,18 @@ input:-webkit-autofill {
   margin-right:1rem;
   margin-left:1rem;
   border-radius:50%
+}
+.button-pasta {
+  padding: 5px 26px;
+font-size: 12px;
+text-align: center;
+cursor: pointer;
+outline: none;
+color: #fff;
+background-color: gray;
+border: none;
+border-radius: 15px;
+box-shadow: 0 3px #999;
 }
 
 
