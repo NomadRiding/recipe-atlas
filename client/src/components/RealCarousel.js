@@ -13,24 +13,32 @@ const image = {
 const PastaCarousel = () => {
   return(
     <div>
-    <div class = "PastaCarousel">
+    <div className = "PastaCarousel">
     <Carousel style={image}>
       <Carousel.Item>
-        <img width={900} height={500} src={pasta1} alt="No picture" />
+        <img style={image} width={900} height={500} src={'https://www.giallozafferano.it/images/ricette/36/3601/foto_hd/hd450x300.jpg'} alt="No picture" />
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img width={900} height={500} src={pasta2} />
+
+        <img style={image} width={900} height={500} src={'https://images-gmi-pmc.edge-generalmills.com/5b31acd1-946b-4eb1-bb5c-b9141056178f.jpg'} />
+
+
+
         <Carousel.Caption>
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img width={900} height={500} src={pasta3} />
+
+        <img style={image} width={900} height={500} src={'https://cocineroaficionado.com/wp-content/uploads/2015/09/tiraminu-s.jpg'} />
+
+
+
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

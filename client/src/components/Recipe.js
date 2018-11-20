@@ -3,23 +3,23 @@ import { Grid, Card, Image } from 'semantic-ui-react';
 
 const cards = {
   width: '300px',
-  height: '450px',
+  height: '250px',
   margin: '10px'
 }
 
+
 const Recipe = props => {
-  return(
-    <div style={cards}>
-      <Grid.Column >
-        <Grid.Row >
+  return <div style={cards}>
+      <Grid.Column>
+        <Grid.Row>
           <Card style={cards}>
-            {props.recipe.title}
+            {props.recipe.title},<a target="blank" href={props.recipe.f2f_url}>
+              <Image src={props.recipe.image_url} />{" "}
+            </a>
           </Card>
         </Grid.Row>
       </Grid.Column>
-    </div>
-
-  )
+    </div>;
 }
 
 export default Recipe;

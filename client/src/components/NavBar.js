@@ -11,7 +11,7 @@ return (
         <a href="/">Home</a>
         <a href="./About">About</a>
         <div className="dropdown">
-          <button className="dropbtn">
+          {/* <button className="dropbtn">
             Dropdown
             <i className="fa fa-caret-down" />
           </button>
@@ -19,7 +19,7 @@ return (
             <a href="./components/About.js">Link 1</a>
             <a href="#">Link 2</a>
             <a href="#">Link 3</a>
-          </div>
+          </div> */}
         </div>
       </span>
       <span className="center">

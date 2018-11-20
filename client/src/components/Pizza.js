@@ -37,7 +37,7 @@ pizzaComponents = pizzas.map(([src, title, subtitle, text], i) => {
             <CardText>
                 {text}
                     </CardText>
-            <Button>Button</Button>
+            <Button className="button-Pizza">Button</Button>
         </CardBody>
     </Card>)
 }),
@@ -56,7 +56,7 @@ class PizzaDeck extends React.Component {
                 <h2>Pizza</h2>
               </div>
             </div>
-            
+
             <div className="pizzaGroup">
               <CardDeck className="pizzaCards">
                     {pizzaComponents}

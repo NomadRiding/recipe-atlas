@@ -9,7 +9,8 @@ const pastas = [
   [
     'https://images-gmi-pmc.edge-generalmills.com/5b31acd1-946b-4eb1-bb5c-b9141056178f.jpg',
     'chicken Alfredo Pasta',
-    'This is an incredibly moist, intensely chocolate cake, perfect for chocoholics',
+    'This is an incredibly moist, intensely chocolate cake, perfect for chocoholics, chicken Alfredo Pasta is so delicious, ',
+
   ],
   [
     'https://getinspiredeveryday.com/food/wp-content/uploads/sites/5/2015/11/Creamy-Sundried-Tomato-Pasta-with-Italian-Sausage-and-Veggies-GI-365-6.jpg',
@@ -27,7 +28,7 @@ pastaComponents = pastas.map(([src, title, subtitle, text], i) => {
           <CardText>
               {text}
                   </CardText>
-          <Button>Button</Button>
+          <Button className="button-PastaDeck">Button</Button>
       </CardBody>
     </Card>
   )
@@ -35,7 +36,7 @@ pastaComponents = pastas.map(([src, title, subtitle, text], i) => {
   pastaOptions = pastas.map(([_, title, __, ___], i) => {
     return <option key={`option${i}`} value={title}>{title}</option>
   });
-  
+
   class PastaDeck extends React.Component {
     render() {
         return <div>
@@ -47,7 +48,7 @@ pastaComponents = pastas.map(([src, title, subtitle, text], i) => {
                 <h2>Pasta</h2>
               </div>
             </div>
-            
+
             <div className="pizzaCards">
               <CardDeck className="pizzaCards">
                 {pastaComponents}
