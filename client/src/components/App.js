@@ -59,13 +59,11 @@ class App extends Component {
           <Pizza />
         </div>
         <div>
-
-          <Footer></Footer>
-
-          <DessertDeck />
-
+          <Footer />
         </div>
-
+        <div>
+        <DessertDeck />
+        </div>
         {this.state.hasRecipes ? <Recipes recipes={this.state.recipeList} /> : null}
       </div>;
   }
