@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from './NavBar';
 import { Component } from 'react';
 import chefStashe from './Images/chefStashe.png';
-import About from './About.js';
 import Footer from './Footer'
 
 import axios from 'axios';
@@ -12,6 +11,7 @@ import PastaDeck from './PastaDeck.js';
 import DessertDeck from './Dessert';
 import Pizza from './Pizza.js';
 import PastaCarousel from './RealCarousel.js';
+
 
 
 
@@ -50,6 +50,7 @@ class App extends Component {
           </div>
           <div>
             <PastaCarousel />
+
           </div>
         </div>
         <div>
@@ -64,7 +65,6 @@ class App extends Component {
         <div>
         <Footer />
         </div>
-
         {this.state.hasRecipes ? <Recipes recipes={this.state.recipeList} /> : null}
       </div>;
   }

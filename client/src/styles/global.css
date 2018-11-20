@@ -38,7 +38,7 @@
   .brand {
     display: flex;
     justify-content: space-between;
-  
+
   }
 
   /* Links inside the navbar */
@@ -57,7 +57,7 @@
   }
 
   .center {
-    margin-left: 25vw;
+    margin-left: 35vw;
     display: flex;
     justify-content: center;
 
@@ -175,17 +175,6 @@ button:focus {
   color: white;
 }
 
-/*
-.PastaCarousel {
-  display: flex;
-  align-content: flex-start;
-  justify-content: center;
-/* flex-direction: row;
- margin-top: 10vh;
-  width: 100%; */
-/* } */
-
-
 
 .recipe_buttons {
   border: solid 2px #e74c3c;
@@ -298,8 +287,7 @@ input:-webkit-autofill {
 .titleStuff {
   display: flex;
   flex-direction:row;
-  
-  
+
 }
 
 .titleStuff h2 {
@@ -359,7 +347,9 @@ input:-webkit-autofill {
 
 
 
+
 /****************** Pizza Portion *******************/
+
 
 .pizza-group {
   display: flex;
@@ -415,6 +405,19 @@ input:-webkit-autofill {
   
 }
 
+.button-Pizza{
+  padding: 5px 26px;
+font-size: 12px;
+text-align: center;
+cursor: pointer;
+outline: none;
+color: #fff;
+background-color: gray;
+border: none;
+border-radius: 15px;
+box-shadow: 0 3px #999;
+
+    }
 
 /******** RECIPE.js ********/
 
@@ -464,6 +467,20 @@ input:-webkit-autofill {
   text-transform: uppercase;
   font-weight: 500;
 }
+
+.button-Dessert{
+  padding: 5px 26px;
+font-size: 12px;
+text-align: center;
+cursor: pointer;
+outline: none;
+color: #fff;
+background-color: gray;
+border: none;
+border-radius: 15px;
+box-shadow: 0 3px #999;
+    }
+
 
 /* ----------------------------Footer----------------------------------> */
 

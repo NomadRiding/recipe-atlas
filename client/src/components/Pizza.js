@@ -37,7 +37,7 @@ pizzaComponents = pizzas.map(([src, title, subtitle, text], i) => {
             <CardText>
                 {text}
                     </CardText>
-            <Button>Button</Button>
+            <Button className="button-Pizza">Button</Button>
         </CardBody>
     </Card>)
 }),
